@@ -1,6 +1,5 @@
 tasks:
-  - before: |
-      npm i -g saucectl
   - command: |
-      echo test
+      cd v1
+      npm i -g saucectl
       saucectl run
