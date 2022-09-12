@@ -1,0 +1,6 @@
+tasks:
+  - before: |
+      npm i -g saucectl
+  - command: |
+      echo test
+      saucectl run
