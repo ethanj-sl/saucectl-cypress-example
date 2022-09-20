@@ -2,7 +2,7 @@ tasks:
   - command: |
       cd v1
       npm i -g saucectl
-      if [[ -z "${DEPLOY_ENV}" ]]; then
+      if [[ -z "$BUILD" ]]; then
         saucectl run
       else
         saucectl run --build $BUILD
